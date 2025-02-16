@@ -33,7 +33,7 @@ locals {
 ################################################################################
 
 module "vpc" {
-  source = "./terraform-aws-vpc"
+  source = "terraform-aws-modules/vpc/aws"
 
   name = "${local.name}"
   cidr = local.vpc_cidr
